@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(149, 252, 252);
+    background-color: rgb(230, 238, 238);
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
@@ -18,8 +18,8 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    border: 7px solid rgb(32, 241, 5);
-    background-color: rgb(241, 59, 59);
+    border: 7px solid rgb(40, 5, 241);
+    background-color: rgb(14, 12, 12);
 }
 
 .flex-item1, .flex-item2, .flex-item3, .flex-item4 {
@@ -31,10 +31,10 @@ h1 {
     font-size: 1.2em;
 }
 
-.flex-item1 { background-color: rgb(235, 159, 159); border: 2px solid red; }
-.flex-item2 { background-color: rgb(159, 235, 198); border: 2px solid green; }
-.flex-item3 { background-color: rgb(235, 228, 159); border: 2px solid rgb(248, 244, 7); }
-.flex-item4 { background-color: rgb(235, 159, 225); border: 2px solid rgb(35, 1, 75); }
+.flex-item1 { background-color: rgb(179, 179, 179); border: 2px solid red; }
+.flex-item2 { background-color: rgb(69, 7, 170); border: 2px solid green; }
+.flex-item3 { background-color: rgb(125, 138, 179); border: 2px solid rgb(248, 244, 7); }
+.flex-item4 { background-color: rgb(88, 87, 97); border: 2px solid rgb(35, 1, 75); }
 
 /* Celular (até 600px) */
 @media (max-width: 600px) {
