@@ -4,10 +4,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
 }
-title {
-    font-size: 24px;
-    font-weight: bold;
-}
+
 h1 {
     color: rgb(3, 3, 3);
     border: 5px solid rgb(51, 51, 252);
@@ -17,62 +14,29 @@ h1 {
 
 .flex-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     height: 100vh;
     border: 7px solid rgb(32, 241, 5);
     background-color: rgb(241, 59, 59);
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 }
 
-.flex-item1 {
-    background-color: rgb(235, 159, 159);
+.flex-item1, .flex-item2, .flex-item3, .flex-item4 {
     padding: 20px;
     margin: 10px;
-    border: 2px solid red;
     border-radius: 10px;
     flex: 1 1 200px;
     text-align: center;
     font-size: 1.2em;
 }
 
-.flex-item2 {
-    background-color: rgb(159, 235, 198);
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid green;
-    border-radius: 10px;
-    flex: 1 1 200px;
-    text-align: center;
-    font-size: 1.2em;
-}
+.flex-item1 { background-color: rgb(235, 159, 159); border: 2px solid red; }
+.flex-item2 { background-color: rgb(159, 235, 198); border: 2px solid green; }
+.flex-item3 { background-color: rgb(235, 228, 159); border: 2px solid rgb(248, 244, 7); }
+.flex-item4 { background-color: rgb(235, 159, 225); border: 2px solid rgb(35, 1, 75); }
 
-.flex-item3 {
-    background-color: rgb(235, 228, 159);
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid rgb(248, 244, 7);
-    border-radius: 10px;
-    flex: 1 1 200px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.flex-item4 {
-    background-color: rgb(235, 159, 225);
-    padding: 20px;
-    margin: 10px;
-    border: 2px solid rgb(35, 1, 75);
-    border-radius: 10px;
-    flex: 1 1 200px;
-    text-align: center;
-    font-size: 1.2em;
-}
-
+/* Celular (até 600px) */
 @media (max-width: 600px) {
     .flex-container {
         flex-direction: column;
@@ -85,9 +49,9 @@ h1 {
         border: 2px solid black;
         background-color: rgb(84, 96, 206);
     }
-
 }
 
+/* Tablet pequeno (601px até 750px) */
 @media (min-width: 601px) and (max-width: 750px) {
     .flex-container {
         flex-direction: column;
@@ -100,10 +64,12 @@ h1 {
         font-size: 1.1em;
         border: 3px solid rgb(0, 0, 0);
         background-color: rgb(46, 0, 252);
+        color: white;
     }
 }
 
-@media (min-widht: 751px) and (max-width: 1200px) {
+/* Tablet grande (751px até 1200px) */
+@media (min-width: 751px) and (max-width: 1200px) {
     .flex-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -116,6 +82,7 @@ h1 {
     }
 }
 
+/* Desktop (a partir de 1201px) */
 @media (min-width: 1201px) {
     .flex-container {
         flex-direction: row;
